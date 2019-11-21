@@ -1,0 +1,19 @@
+.video-area {
+	background: #C6E8DD;
+	@include sectionPaddingMedium;
+	text-align: center;
+
+	.sec-title {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.video-holder {
+		> div {
+			margin: 30px auto;
+		}
+	}
+	.list {
+		text-align: center;
+		justify-content: center;
+	}
+}

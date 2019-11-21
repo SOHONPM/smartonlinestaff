@@ -1,0 +1,145 @@
+.testimonial {
+	position: relative;
+   background: #F5F5F5;
+	@include min-breakpoint(768) {
+		padding:  40px 0 60px 0;
+	}
+    .sec-title {
+        position: relative;
+        z-index: 4;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+    	margin-top: 10px;
+    	font-size: 20px;
+    }
+    .owl-carousel {
+    	max-width: 100%;
+        padding: 0 40px;
+    	margin: 0 auto;
+    	img {
+    		    max-width: 100px;
+    	}
+    	position: relative;
+
+        @include min-breakpoint(992) {
+            padding: 0;
+            max-width: 800px;
+        }
+
+    	.owl-prev {
+    		position: absolute;
+    		top: 50%;
+    		left: 0px;
+    		z-index: 2;
+    		width: 32px;
+    		height: 32px;
+    		line-height: 27px;
+    		background: #ecf3f1;
+    		border-radius: 50%;
+    		color: $darkerblue_color;
+
+            @include min-breakpoint(992) {
+                  left: -80px;  
+            }
+
+    		&:hover,
+    		&:focus  {
+    			background: $darkerblue_color;
+    			color: #fff;
+    		}
+    	}
+    	.owl-next {
+    		position: absolute;
+    		top: 50%;
+    		right: 0px;
+    		z-index: 2;
+    		width: 32px;
+    		height: 32px;
+    		line-height: 27px;
+    		background: #ecf3f1;
+    		border-radius: 50%;
+    		color: $darkerblue_color;
+
+
+            @include min-breakpoint(992) {
+                  right: -80px;  
+            }
+
+    		&:hover,
+    		&:focus  {
+    			background: $darkerblue_color;
+    			color: #fff;
+    		}
+    	}
+        .slide {
+            background-color: transparent !important;
+
+            .date {
+                font-weight: 500;
+                font-size: 15px;
+            }
+            .cust-name {
+                display: block;
+                clear: both;
+
+                a {
+                    display: block;
+                    padding: 0;
+                    line-height: 1;
+                    font-size: 18px;
+                }
+            }
+            .dec {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.4;
+                color: $dark_color;
+                float: none;
+                width: 100%;
+            }
+        }
+
+    }
+}
+.single-testimony {
+	margin-bottom: 30px;
+	h3 {
+		font-size: 20px;
+		margin: 0;
+		line-height: 1;
+	}
+	span {
+		display: block;
+		margin-bottom: 10px;
+	}
+	&__header {
+		max-width: 150px;
+		margin: 0 auto 10px auto;
+		span {
+			font-size: 15px;
+			color: #979F9D;
+		}
+		display: flex;
+		&--left {
+			width: 50px;
+		}
+		&--right {
+			width: calc(100% - 50px);
+			padding-left: 10px;
+		}
+	}
+	.quote {
+		text-align: center;
+	}
+	img {
+		margin: 0 auto;
+	}
+	&__rating {
+		height: 20px;
+		margin-top: 5px;
+		display: inline-block;
+	}
+}
+

@@ -1,0 +1,62 @@
+.benefits {
+    position: relative;
+    background-image: url(../images/bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    color: #fff;
+    .sec-title {
+        h2 {
+            color: #fff;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: #C2C2C2;
+            margin-bottom: 30px;
+            font-size: 19px;
+        }
+    }
+    h3 {
+        color: $primary_color;
+    }
+    .image-block {
+        margin: 0 0 10px 0;
+    }
+    .list-block {
+        text-align: center;
+
+        @include min-breakpoint(576) {
+            text-align: left;
+        }
+    }
+}
+.benefit-area-two {
+    @include sectionPaddingLarge;
+    background: rgba(115, 243, 201, 0.23);
+    
+
+    h2 {
+        @include headingTertiary;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .list {
+        &__item {
+            margin: 10px 0;
+            h4 {
+                font-size: 19px;
+                margin-bottom: 0;
+                color: $darkerblue_color;
+                font-weight: 600;
+            }
+            .img-box {
+                margin: 10px 0;
+            }
+
+        }
+    }
+}

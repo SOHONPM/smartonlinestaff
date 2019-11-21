@@ -1,0 +1,46 @@
+.founder-area {
+	@include sectionPaddingXLarge;
+	background: #f5f5f5;
+
+	img {
+		border-radius: 25px;
+		width: 100%;
+	}
+	h2 {
+		@include headingSecondary;
+	}
+	h3 {
+		@include headingTertiary;
+		line-height: 1;
+		margin: 0;
+	}
+	p {
+		@include min-breakpoint(768) {
+			column-count: 2;
+		}
+	}
+
+	.founder-image {
+		max-width: 200px;
+	}
+	.founder-area-left {
+		order: 1;
+		margin-bottom: 20px;
+			
+		figure {
+			display: block;
+		}	
+
+		@include min-breakpoint(768) {
+			text-align: left
+
+
+			figure {
+				margin: 0;
+			}
+		}
+	}
+	.founder-area-right {
+		order: 2;
+	}
+}

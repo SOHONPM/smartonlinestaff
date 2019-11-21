@@ -1,0 +1,51 @@
+.list-area {
+	padding: 50px 0;
+
+	h2 {
+		font-size: 27px;
+		font-weight: 600;
+	}
+	.list {
+		margin-top: 40px;
+
+		h4 {
+			@include headingTertiary;
+			font-weight: 500;
+		}
+		&__item {
+			margin-bottom: 20px;
+
+			@include min-breakpoint(992) {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	&-two {
+
+		.list {
+			&__item {
+				display: flex;
+
+				&--big {
+					h2 {
+						font-size: 44px;
+						line-height: 51px;
+					}
+				}
+				&-number {
+					font-size: 44px;
+					line-height: 1;
+					color: #cecece;
+					font-weight: 600;
+				}
+				&-info {
+					padding-left: 20px;
+					padding-right: 10px;
+					color: #585B63;
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.our-team {
+	padding: 40px 0;
+	@include min-breakpoint(991) {
+		padding: 60px 0;
+	}
+  .list-block {
+  	.row {
+  		margin-left: -10px;
+  		margin-right: -10px;
+  		> div {
+  			@include breakpoint(575) {
+  				width: 50%;
+  				padding: 0 10px;
+  			}
+  		}
+  	}
+  } 
+  .sec-title {
+  	.size-md {
+  		@include headingSecondary; 
+  	}
+  }
+}
+.single-team {
+	margin: 20px 0;
+	webkit-box-shadow: 0 1px 9px 0 #191919;
+	box-shadow: 0 3px 9px 0 rgba(132, 130, 130, 0.14);
+	transition: box-shadow, background 0.3s ease;
+	border-radius: 6px;
+	overflow: hidden;
+
+	&:hover,
+	&:focus {
+		box-shadow: 0 3px 30px 0 rgba(132, 130, 130, 0.18);
+	}
+	.image-block {
+		margin: 0;
+	}
+	&__info {
+		padding: 25px 20px;
+		p {
+			color: $secondary_color;
+			margin: 0;
+			font-size: 19px;
+			line-height: 1;
+			transition: color 0.3s ease;
+		}
+		span {
+			display: inline-block;
+			margin-top: 5px;
+			line-height: 1.2;
+			font-size: 16px;
+			color: #c7c1c1;
+
+			@include min-breakpoint(560) {
+				font-size: 17px;
+			}
+		}
+	}
+}

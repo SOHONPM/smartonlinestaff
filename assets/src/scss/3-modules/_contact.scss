@@ -1,0 +1,42 @@
+.contact-page-section {
+	padding: 20px 0;
+	@include min-breakpoint(768) {
+		padding: 40px 0;
+	}
+
+	h3 {
+		font-size: 19px;
+		font-weight: 600;
+	}
+
+	h2 {
+		font-weight: 600;
+		font-size: 27px;
+		text-align: center;
+	}
+	.content-box {
+		text-align: center;
+		margin-bottom: 20px;
+		@include min-breakpoint(768) {
+			margin-top: 70px;
+			margin-bottom: 0;
+			text-align: left;
+		}
+	}
+}
+.contact-map-section {
+	margin-top:100px;
+	background: $darkerblue_color;
+
+	@include min-breakpoint(768) {
+		margin-top:200px;
+	}
+	.map-outer {
+	    position: relative;
+	    top: -70px;
+
+	    @include min-breakpoint(768) {
+			margin-top:-150px;
+		}
+	}
+}

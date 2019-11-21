@@ -1,0 +1,18 @@
+.form-text-area {
+	padding: 30px 0;
+	margin-bottom:  -70px;
+	h2 {
+		font-size: 24px;
+		font-weight: 600;
+	}
+	.image-block {
+		margin: 30px 0;
+	}
+
+	.form-block {
+
+		@include min-breakpoint(1200) {
+	    	padding-left: 40px;
+		}
+	}
+}
