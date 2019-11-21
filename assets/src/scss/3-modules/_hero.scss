@@ -1,0 +1,79 @@
+.hero-section {
+	// background: transparent url(../../assets/images/hero_bg.png) center center no-repeat padding-box;
+
+	left: -237px;
+	width: 100%;
+	height: auto;
+	background-size: cover !important;
+
+	.form__horizontal {
+		max-width: 330px;
+		float: right;
+
+		@include breakpoint(991) {
+			float: left;
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+
+	.container {
+		padding: 50px 15px 0;
+
+		@include breakpoint(768) {
+			padding: 50px 15px 0;
+		}
+
+		.title span {
+			color: #aa9766;
+		}
+
+		.wrapper {
+			padding: 0 30px 20px;
+			width: fit-content;
+			margin-bottom: 180px;
+			bottom: 0;
+
+			@include breakpoint(1200) {
+				margin-bottom: 195px;
+			}
+
+			@include breakpoint(991) {
+				margin-bottom: 0;
+				padding: 20px 0;
+			}
+
+			h1 {
+				text-align: left;
+				font-size: 40px;
+				line-height: 1.5em;
+				font-family: Century Gothic;
+				font-weight: bold;
+				letter-spacing: 0;
+				color: $b;
+				max-width: 621px;
+				margin-bottom: 100px;
+
+				@include breakpoint(992) {
+					max-width: unset;
+					margin-bottom: 0;
+				}
+
+				@include breakpoint(768) {
+					font-size: 40px;
+					line-height: 50px;
+				}
+
+				@include breakpoint(510) {
+					font-size: 30px;
+					line-height: 40px;
+				}
+
+				@include breakpoint(398) {
+					font-size: 25px;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+}
